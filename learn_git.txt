@@ -1,0 +1,27 @@
+学习git和github的使用。
+
+1.安装git软件。
+2.在github上注册信息。
+3.  git config --global user.name 'XXX'
+    git config --global user.email 'XXX@XX.com'
+4.创建文件夹，
+5.  cd + 文件夹
+6.初始化
+    git init
+7.查询git信息
+    git config --global -l
+8.本地编辑完成代码后，提交到暂存区
+    git add XXX.XX
+    git add .    or   git add -A
+9.查看文件的状态（红色在本地，绿色在暂存区，没有信息，代表所有信息都提交了）。
+    git status
+10.把暂存区文件提交到历史区
+    git commit -m'本次提交内容的描述‘
+11.几个命令
+    ls      clear     
+12.查看历史版本
+    git log(查看历史版本）
+    git reflog(查看所有历史版本）	
+13.回退到历史版本
+	git reset --hard (版本号)
+14.
