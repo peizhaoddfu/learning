@@ -38,4 +38,35 @@
 	git pull origin master
 	把本地代码提交到远程仓库（需要输入github的用户名密码）
 	git push origin master
+	git clone [远程仓库git地址】 【别名：可以不设置，默认仓库名】
+真实项目开发流程：
+1.组长先创建中央仓库(z增加协作者）
+2.小组成员基于git clone把原创仓库克隆下来。
+解决了三件事情：初始化、关联、拉取
+3.此后的动作可以用：git push，git pull等完成，不必家用origin等链接名称。
+每个组员完成自己的代码后，基于‘git add ./git commit'把自己修改的内容放到历史区，然后通过‘git push/git pull’把本地信息和远程仓库信息保持同步即可（可能设计冲突的处理）。
+
+15.
+NPM (node package manger)node 模块管理工具，根据NPM我们可以快速安装、卸载所需要的资源文件（例如：jQuery\vue\vuerouter)
+
+去node官网：https://nodejs.org/zh-cn     下载长期支持版，安装node后，NPM也就安装完成了。
+node -v
+npm -v
+用了来查看版本号，说明安装成功。
+###基于npm进行模块管理
+https://www.npmjs.com/    基于npm是从npmjs。com平台上下载安装
+
+npm install XXX       把模块安装在当前项目当中（node_modules)
+npm install XXX -g    把模块安装在全局环境中
+npm i XXX@1.1.1       安装制定版本号的模块
+npm view xxx versions > xxx.version.json         查看某个模块的版本信息（输出到指定json文件中）
+npm init -y     初始化当前项目的配置依赖清单
+npm i xxx --save  把模块清单保存在清单生产依赖中
+npm i xxx --save-dev  把模块保存在清单开发依赖中
+npm install          跑环境，按照清单安装所需的模块
+npm root -g          查看全局安装模块的目录
+npm unstall xxx
+npm unstall xxx -g    卸载安装过的模块
+
+学习结束。
 
