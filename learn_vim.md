@@ -62,5 +62,5 @@
 |ap|当前段落及一个空行|
   
   
-![keyboard](keyboard.png)
+![keyboard](pic/keyboard.png)
 
