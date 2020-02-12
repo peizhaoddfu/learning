@@ -11,6 +11,8 @@
 |rm	|remove|	删除文件|
 |clear	|clera   |清空|
 ## 02.终端命令格式
-###	command [-options] [parameter]  命令   	-选项	参数
+###	command [-options] [parameter]  
+  命令   	-选项	参数
 ## 03.查阅命令帮助信息：
-###	command --help  man command
+###	command --help   
+ man command
