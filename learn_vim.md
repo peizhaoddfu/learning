@@ -62,5 +62,5 @@
 |ap|当前段落及一个空行|
   
   
-![keyboard](http://www.linuxidc.com/upload/2015_07/150716090467891.jpg)
+[keyboard](http://www.linuxidc.com/upload/2015_07/150716090467891.jpg)
 
