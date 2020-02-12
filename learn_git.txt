@@ -69,5 +69,7 @@ npm root -g          查看全局安装模块的目录
 npm unstall xxx
 npm unstall xxx -g    卸载安装过的模块
 
+
+
 学习结束。
 
