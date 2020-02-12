@@ -1,6 +1,7 @@
 学习git和github的使用。
 
 1.安装git软件。
+www.git-scm.com
 2.在github上注册信息。
 3.  git config --global user.name 'XXX'
     git config --global user.email 'XXX@XX.com'
