@@ -74,8 +74,45 @@
 |grep -n|所有包含文本的行及行号|
 |grep -v|所有不包含文本的行及行号|
 |grep -i|不区分大小写|
-|grep 
-
+|grep ^a|行首，搜索以a开头的行|
+|grep ke$|行尾，搜索以ke结尾的行|
+|||
+|echo|终端显示命令|
+|echo >|在定向文件中显示内容 echo XXX > XX.XX|
+|>|把内容覆盖到XX文件中|
+|>>|把内容追加到XX文件中|
+|重定向|把参数文字直接输入到一个文件中保存起来|
+|>,>>|重定向|
+|管道符|通过管道把第一个命令的执行结果，作为另一个命令的输入|
+|||
+|shutdown 选项 时间|重启、关闭系统|
+|shutdown 10 或者 shutdown 20:25|关机时间设定|
+|shutdown -c|取消关机|
+|shutdown -r|重启|
+|||
+|ifconfig|configure a network interface:查看配置计算机当前的网卡配置信息|
+|ping ip地址|检测目标ip地址的连接是否正常|
+|||
+|远程登录，远程管理|复制文件|
+|ssh|secure shell|
+|域名|ip地址是一组用点分割的数字，域名是ip地址的别名|
+|端口号|找到服务软件|
+|默认端口|ssh服务器：22；web服务器：80；HTTPS：445；FTP服务器：21|
+|ssh [-p port] user@remote||
+|user|远程机器上的用户名，如果不指定，默认当前用户|
+|remote|远程机器的地址，可以是ip/域名，或者是别名|
+|port|是SSH Server监听的端口，如果不指定，默认为22|
+|-p port|是22时可以省略，否则-p 数字|
+|windows下SSH客户端|putty 和 XShell|
+|scp| secure copy;复制文件夹和cp一样用-r|
+|scp **-P** user@ip||
+|scp -P port 01.py user@remote:Desktop/01.py |把当前目录下的01.py复制到远程家目录下Desktop/01.py|
+|scp -P port user@remote:Desktop/01.py 01.py|把远程家目录下的Desktop/01py文件复制到本地当前目录下的01.py|
+|scp -P 22 python@172.16.140.138:Desktop/01.py .01.py|scp -P 22 -r python@172.16.140.138:Desktop/01.py .01.py|
+|windows中|用FileZilla传输,端口写21，因为是ftp服务器|
+|SSH高级|免密码登录，配置别名|
+|ssh-keygen|免密码登录|
+|ssh-copy-id -p port ghggfuser@remote|
 
   
 绝对路径：/开始的
