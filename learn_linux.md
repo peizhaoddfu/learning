@@ -119,7 +119,7 @@
 |配置信息｜host mac（指定的别名)  
 HostName ip地址  
 user （远程计算机用户名）  
-   port 22(端口)
+   port 22(端口)|
 
   
 绝对路径：/开始的
