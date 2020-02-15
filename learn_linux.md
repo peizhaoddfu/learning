@@ -185,6 +185,8 @@ user （远程计算机用户名）
   
 ### 系统信息相关命令：
 #### 
+|command|meaning|
+|:--:|------|
 |date|查看系统时间|
 |cal|查看日历 -y|
 |df -h|disk free|
