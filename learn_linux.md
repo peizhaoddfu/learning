@@ -110,9 +110,16 @@
 |scp -P port user@remote:Desktop/01.py 01.py|把远程家目录下的Desktop/01py文件复制到本地当前目录下的01.py|
 |scp -P 22 python@172.16.140.138:Desktop/01.py .01.py|scp -P 22 -r python@172.16.140.138:Desktop/01.py .01.py|
 |windows中|用FileZilla传输,端口写21，因为是ftp服务器|
-|SSH高级|免密码登录，配置别名|
-|ssh-keygen|免密码登录|
-|ssh-copy-id -p port ghggfuser@remote|
+|||
+|**SSH高级**|免密码登录，配置别名|
+|ssh-keygen|生成SSH钥匙,包括公钥（id_isa.pub)和私钥(id_rsa)，免密码登录|
+|ssh-copy-id -p port ghggfuser@remote|上传公钥到服务器(id_ras.pub)|
+|非对称加密算法|公钥加密的数据用私钥解密；私钥加密的数据用公钥解密|
+|配置别名|在~/.ssh文件夹下创建config文件，gidit config，输入配置信息|
+|配置信息｜host mac（指定的别名)  
+HostName ip地址  
+user （远程计算机用户名）  
+   port 22(端口)
 
   
 绝对路径：/开始的
