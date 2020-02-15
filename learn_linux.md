@@ -122,7 +122,7 @@ user （远程计算机用户名）
    port 22(端口)|
 
 ### 用户权限相关设置。
-#### 01. 
+####   
 |序号|权限|英文|缩写|数字代码|
 |:--:|:--:|:--:|:--:|:--:|
 |01|读|read|r|4|
@@ -151,7 +151,46 @@ user （远程计算机用户名）
 |passwd 用户名|设置用户密码|
 |userdel -r 用户名|删除用户|
 |cat /etc/passwd ｜grep 用户名|确认用户信息,用户信息保存在/etc/passwd文件中|
-|id 用户名|查看uid |
+|id 用户名|查看uid(用户代号）,gid（组代号） |
+|/etc/passwd|密码信息存在此文件|
+|/etc/group|组信息存在此文件|
+|passwd文件信息|用6个冒号组成7个信息：1.用户名，2.密码（x表示加密的密码），3.UID（用户标识），4.GiD（组标识），5.用户全名或本地账户，6.家目录。7.登录使用的Shell。|
+|who|当前所有登录的用户列表|
+|whoami|当前登录用户的账户名|
+|usermod|修改用户的主组/附加组和登录Shell|
+|usermod -g 组 用户名|修改用户的主组（passwd中的GID）|
+|usermod -G 组 用户名|修改用户的附加组|
+|usermod -s /bin/bash|修改用户登录Shell|
+|dash和bash|ubuntu默认是dash，切换为bash比较好|
+|**which**|查看执行命令所在位置|
+|/etc/passwd|是保存信息用的文件|
+|/usr/bin/passwd|是可执行文件|
+|bin和sbin|bin下保存可执行文件，sbin保存系统重要的可执行文件|
+|usr/bin或use/sbin|是在系统安装后，后期安装的可执行文件|
+|su|切换用户|
+|su - 用户名|- 可以切换到用户家目录|
+|su -|直接切换到root|
+|||
+|修改文件权限命令|chown,chgrp,chmod|
+|chown|修改所有者chown 用户名 文件名｜目录名|
+|chgrp|修改所属组chgrp -R 组名 文件名｜目录名|
+|chmod|修改权限chmod -R 755 文件名｜目录名|
+|r|4|
+|w|2|
+|x|1|
+|777|u=rwx,g=rwx,o=rwx|
+|755|u=rwx,g=r-x,o=r-x|
+|644|u=rw-,g=r--,o=r--|
+|||
+  
+### 系统信息相关命令：
+#### 
+|date|查看系统时间|
+|cal|查看日历 -y|
+|
+
+
+
 
   
 绝对路径：/开始的
