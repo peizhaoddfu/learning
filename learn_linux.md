@@ -150,7 +150,7 @@ user （远程计算机用户名）
 |useradd -m -g 组 新建用户名|添加新用户；-m：自动建立用户家目录;-g:指定用户所在组|
 |passwd 用户名|设置用户密码|
 |userdel -r 用户名|删除用户|
-|cat /etc/passwd |grep 用户名|确认用户信息,用户信息保存在/etc/passwd文件中|
+|cat /etc/passwd ｜grep 用户名|确认用户信息,用户信息保存在/etc/passwd文件中|
 |id 用户名|查看uid |
 
   
