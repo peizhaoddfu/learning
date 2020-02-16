@@ -202,7 +202,24 @@ user （远程计算机用户名）
 |find [路径] -name "*1*.py"|查找文件|
 |**软连接**|类似于快捷方式|
 |ln -s 被链接的源文件 链接文件|建立文件的软连接;**源文件一定要使用绝对路径**|
-|**硬链接**|
+|**硬链接**|ln 被链接的源文件 链接文件：相当于文件的另一个名字|
+|linux中，文件名和文件数据是分开存储的||
+|||
+|tar|**打包**文件名：.tar|
+|tar:只负责打包，不负责压缩|tar -cvf 打包文件名.tar 被打包的文件/路径|
+|tar -xvf 打包文件.tar|解包命令|
+|tar -cvf py.tar 01.py 02.py 03.py|tar -xvf py.tar|
+|gzip|**压缩**文件名.tar.gz|
+|tar -zcvf 打包文件.tar.gz 被压缩的文件/路径|tar -zxvf 打包文件tar.gz|
+|bzip2|-j .tar.bz2 -C(指定解压缩路径)用法和gzip一样|
+|apt|Advanced Packaging Tool|
+|sudo apt install 软件包|安装软件|
+|sudo apt remove 软件名|卸载软件|
+|sogu apt upgrade|更新已安装的包|
+|配置软件源|国内镜像服务器，阿里、清华、搜狐|
+
+ 
+
 
 
 
