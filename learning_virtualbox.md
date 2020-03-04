@@ -11,3 +11,10 @@
 5.wusa /uninstall /kb:XXXXXXX  
 6.windows8需要卸载：KB30459995.wusa /uninstall /kb:XXXXXXX  
 
+  
+  
+##安装kali linux要点：
+1./、/、等分别安装不同的盘。  
+2.安装好后首先安装文件头  
+	apt-get install linux-headers-$(uname -r)  
+

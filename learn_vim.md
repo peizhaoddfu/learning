@@ -63,4 +63,11 @@
   
   
 [keyboard](http://www.linuxidc.com/upload/2015_07/150716090467891.jpg)
-
+  
+多行注释或删除：
+1.esc  
+2.ctr+v
+3.选择多行
+4.大写‘I“
+5.#
+完成。
