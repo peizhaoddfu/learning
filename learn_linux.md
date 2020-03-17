@@ -218,7 +218,20 @@ user （远程计算机用户名）
 |sogu apt upgrade|更新已安装的包|
 |配置软件源|国内镜像服务器，阿里、清华、搜狐|
 
- 
+### 域名是IP地址的别名
+### 端口号：不指定端口，就使用默认端口。22；80；443；21：
+
+## KALI linux学习：  
+#### 制作U盘镜像：推荐unerbootin。
+#### 从：[kali官网](https://www.kali.org)上下载   
+
+## 使用ssh，Ubuntu系统先安装ssh才可以使用。   
+  
+	sudo apt-grt install openssh-server
+	sudo etc/init.d/ssh start
+	ps -elgrip ssh
+   
+	更改端口号要先stop，之后改端口，之后再start  
 
 
 
